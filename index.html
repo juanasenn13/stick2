@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>stickpro</title>
+	<link rel="shorcut icon" href="img/logos/stick2.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <nav>
+    	<a href="index.html">
+    		<img src="img/logos/stick20.png" alt="logo stickpro">
+    	</a>
+    	<ul class="flex jus align-items flexFlow">
+    		<li><a href="views/stickers.html">stickers</a></li>
+    		<li><a href="views/posters.html">posters</a></li>
+    		<li><a href="#sucursales">sucursales</a></li>
+    		<li><a href="views/quienes somos.html">quienes somos</a></li>
+    		<li><a href="#contacto">contacto</a></li>
+    		<li><a href="views/preguntas frecuentes.html">preguntas frecuentes</a></li>
+
+    	</ul>
+	</nav>
+	<header>
+		<img src="img/otros/header2.png"alt="stickers de muestra">
+		<h1 class="greyText text-center">Los stickers y posters mas resistentes de toda Argentina
+		encontralos aca</h1>
+	</header>
+	<main>
+		<section id="sucursales" class="sucursales__mapa">
+			<h2 class="text-orange text-center text-rubik textXxl">Nuestras sucursales</h2>				
+			<article class="flex jus align-items">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3294.012842129736!2d-58.79515248449501!3d-34.35015125163316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb61b734665953%3A0x967c7645e4cf9355!2sCol%C3%B3n%20335-399%2C%20B1625GGF%20Bel%C3%A9n%20de%20Escobar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1653766161416!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="inlineBlock"></iframe>
+				<br>
+				<br>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3294.088500441508!2d-58.79092448449506!3d-34.34822565153199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb61b3fdb52af9%3A0x4435a6f26aac6263!2sBelgrano%20298-200%2C%20B1625FTD%20Bel%C3%A9n%20de%20Escobar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1653766214022!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</article>	
+			<p class="textOx textXl textPurple">COLON 335</p>
+			<p class="flex reverse textPurple textXl textOx">BELGRANO 280</p>
+		</section>
+
+		<!-- inicia form -->
+		<section>
+			<form action="envio.php" id="contacto" class="form__contacto">
+				<fieldset>
+					<legend class="textBebas textPurple textXl text-center">Contacto</legend>
+					<label for="name">Nombre y Apellido</label>
+					<input type="text" id="name" placeholder="Julieta Valle">
+					<br>
+					<label for="email">Correo</label>
+					<input type="email" id="email" placeholder="julieta@email.com">
+					<br>
+				</fieldset>
+				<fieldset>
+					<legend class="textBebas textPurple textXl text-center">Pedido</legend>
+					<label for="pack1">Pack 1</label>
+					<input type="checkbox" id="pack1" value="pack1">
+					<br>
+					<label for="pack2">Pack 2</label>
+					<input type="checkbox" id="pack2" value="pack2">
+					<br>
+					<label for="pack3">Pack 3</label>
+					<input type="checkbox" id="pack3" value="pack3">
+					<br>
+				</fieldset>
+				<fieldset>
+					<legend class="textBebas textPurple textXl text-center">Envio</legend>
+					<label for="local">Retiro en el local</label>
+					<input type="radio" id="local" name="envio" value="local">
+					<br>
+					<label for="domicilio">Envio a domicilio</label>
+					<input type="radio" id="domicilio" name="envio" value="domicilio">
+					<br>
+					<label for="Provincia">Seleccione una opcion</label>
+					<select name="Provincia" id="Provincia">
+						<option value="buenos aires">Bs.As</option>
+						<option value="caba">CABA</option>
+						<option value="interior">Interior del Pais</option>
+					</select>
+					<br>
+				</fieldset>
+				<fieldset>
+					<legend class="textBebas textPurple textXl text-center">Mensaje</legend>
+					<label for="mensaje">Mensaje</label>
+					<br>
+					<textarea name="" id="mensaje" cols="40" rows="10"></textarea>
+					<br>
+					<input type="reset" value="cancelar">
+					<input type="submit" value="enviar">
+					<br>
+				</fieldset>	
+			</form>
+		</section>
+		<!-- ends form -->
+	</main>
+	<footer>
+		<a href="https://www.facebook.com" target="_blank">
+			<img src="img/logos/face.png">
+		</a>
+		<a href="https://www.instagram.com"target="_blank">
+			<img src="img/logos/igg.png">
+		</a>
+	</footer>
+</body>
+</html>

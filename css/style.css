@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxygen:wght@300&family=Signika+Negative:wght@300&display=swap');
+*{
+	font-family: 'Signika Negative', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+html{
+	font-size: 62,5;
+}
+
+body{
+	background-image: url(../img/bubble2.png);
+}
+
+header img{
+	width:100%;
+
+}
+
+nav{
+	padding: 2px 2px ;
+	background-color: rgba(165,157,147, .5)
+}
+	nav ul{
+		list-style: none;
+
+	}
+
+		nav ul li{
+			margin: 2px;
+		}
+			nav ul li a{
+			text-decoration: none;
+			font-size: 1.5rem;
+			color: #372E2E;
+			font-family: 'Oxygen', sans-serif;
+			
+		}
+
+		nav ul li a:hover{
+			color: orange;
+			font-weight: 500;
+		}
+
+			
+
+
+
+/ selectores de clase / 
+
+.text-g{
+	color: grey;
+}
+.text-center{
+	text-align: center;
+}
+
+.int{
+	line-height: 2rem;
+}
+
+.border{
+	border: deeppink double; 2px;
+}
+
+.mar{
+	margin: 50px;
+}
+.text-orange{
+	color: #F29A32;
+}
+.textLeft{
+	text-align: left;
+}
+
+.greyText{
+	color: #877E7E;
+}
+
+.textXxl{
+	font-size: 3rem;
+}
+
+.inlineBlcock{
+	display: inline-block;
+}
+
+.textXl{
+	font-size: 2rem;
+}
+
+.textMd{
+	font-size: 1.5rem;
+}
+
+.textPurple{
+	color: #6D15B1;
+}
+
+#productos . section. figcaption{
+	text-align: center;
+}
+.textBebas{
+	font-family: 'Bebas Neue', cursive;
+}
+
+.textOx{
+	font-family: 'Oxygen', sans-serif;
+}
+
+.textSign{
+	font-family: 'Signika Negative', sans-serif;
+}
+
+.flex{
+	display: flex;
+}
+
+.flexFlow{
+	flex-flow: row row-reverse wrap;
+}
+.margin{
+	margin: 200px;
+}
+.padding{
+	padding: 50px;
+}
+
+.jus{
+	justify-content: space-between;
+}
+
+.even{
+	justify-content: space-evenly;
+}
+
+.align-items{
+	align-items: center;
+}
+
+.reverse{
+	flex-direction: row-reverse;
+}
+
+/*BEM*/
+
+.sucursales__mapa{
+	width: 70%;
+	height: auto;
+	margin: 80px auto;
+	padding: 30px;
+	border-top: 6px olivedrab double;
+}
+
+.form__contacto{
+	width: 70%;
+	height: auto;
+	margin: 80px auto;
+	padding: 20px;
+
+}
+
+.article__sticker{
+	padding: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.st__st{
+	text-align: center;
+	padding: 5px;
+	font-family:'Oxygen', sans-serif;
+	color: grey;
+}
+
+.precio{
+	text-align: center;
+	padding: 5px;
+	font-family:'Oxygen', sans-serif;
+	color: grey;
+	font-weight: 600;
+}
+
+.contenedor{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows:repeat(3, auto);
+	justify-content: center;
+}
+
+.contenedor2{
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-template-rows:repeat(5, auto);
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	grid-gap: 20px;
+}
+.posters{
+	grid-area: posters;
+}   
+
+.footer{
+	grid-area: pie;
+}
+
+@media only screen and (min-width: 768vh) {
+	
+}

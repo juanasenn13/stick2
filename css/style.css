@@ -20,6 +20,8 @@ header img{
 
 }
 
+
+
 /*nav{
 	padding: 2px 2px ;
 	background-color: rgba(165,157,147, .5)
@@ -85,6 +87,12 @@ header img{
 
 
 }
+nav ul li a:hover{
+	color: darkorange;
+	cursor: pointer;
+}
+
+
 
 .logoCompany {
   max-width: 200px;
@@ -187,11 +195,6 @@ header img{
 	color: #6D15B1;
 }
 
-#productos
-.section
-.figcaption {
-	text-align: center;
-}
 
 
 .textOx{
@@ -240,6 +243,10 @@ header img{
 	background: linear-gradient(to top,rebeccapurple, hotpink);
 }
 
+.transform:hover{
+	transform: translate(5px);
+	cursor: pointer;
+}
 
 
 /*BEM*/
@@ -311,6 +318,15 @@ header img{
   width: 100%;
   max-width: 110px;
 }
+
+.map__direction{
+	color: mediumpurple;
+	font-family: 'Signika Negative', sans-serif;
+	font-size: 2rem;
+	text-align: center;
+
+}
+
 
 @media only screen and (min-width: 768px) {
 	.wrapper {

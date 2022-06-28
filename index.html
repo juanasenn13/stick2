@@ -8,25 +8,45 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <nav>
-    	<a href="index.html">
-    		<img src="img/logos/stick20.png" alt="logo stickpro">
-    	</a>
-    	<ul class="flex jus align-items flexFlow">
-    		<li><a href="views/stickers.html">stickers</a></li>
-    		<li><a href="views/posters.html">posters</a></li>
-    		<li><a href="#sucursales">sucursales</a></li>
-    		<li><a href="views/quienes somos.html">quienes somos</a></li>
-    		<li><a href="#contacto">contacto</a></li>
-    		<li><a href="views/preguntas frecuentes.html">preguntas frecuentes</a></li>
 
-    	</ul>
-	</nav>
-	<header>
-		<img src="img/otros/header2.png"alt="stickers de muestra">
+ <header class="headerStickers">
+      <nav class="navWrapper">
+        <div class="logoCompany">
+          <div class="logoWrapper">
+            <a href="index.html">
+              <img src="img/logos/stick20.png" alt="logo stickpro" />
+            </a>
+          </div>
+        </div>
+        <ul class="linkList">
+          <li class="listElement">
+            <a href="views/stickers.html">stickers</a>
+          </li>
+          <li class="listElement">
+            <a href="views/posters.html">posters</a>
+          </li>
+          <li class="listElement">
+            <a href="index.html#sucursales">sucursales</a>
+          </li>
+          <li class="listElement">
+            <a href="views/quienes somos.html">quienes somos</a>
+          </li>
+          <li class="listElement">
+            <a href="index.html#contacto">contacto</a>
+          </li>
+          <li class="listElement">
+            <a href="views/preguntas frecuentes.html"
+              >preguntas frecuentes</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+	<section class="headerIndex">
+		<img src="img/otros/header2.png"alt="stickers de muestra" class="headerIndex">
 		<h1 class="greyText text-center">Los stickers y posters mas resistentes de toda Argentina
 		encontralos aca</h1>
-	</header>
+	</section>
 	<main>
 		<section id="sucursales" class="sucursales__mapa">
 			<h2 class="text-orange text-center text-rubik textXxl">Nuestras sucursales</h2>				
@@ -41,7 +61,7 @@
 		</section>
 
 		<!-- inicia form -->
-		<section>
+		<section class="wrapp">
 			<form action="envio.php" id="contacto" class="form__contacto">
 				<fieldset>
 					<legend class="textBebas textPurple textXl text-center">Contacto</legend>
@@ -99,7 +119,7 @@
 			<img src="img/logos/face.png">
 		</a>
 		<a href="https://www.instagram.com"target="_blank">
-			<img src="img/logos/igg.png">
+			<img src="img/logos/TTigg.png">
 		</a>
 	</footer>
 </body>

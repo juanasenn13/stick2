@@ -3,6 +3,7 @@
 	font-family: 'Signika Negative', sans-serif;
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 html{
@@ -11,14 +12,15 @@ html{
 
 body{
 	background-image: url(../img/bubble2.png);
-}
+  	min-height: 100vh;
+	}
 
 header img{
 	width:100%;
 
 }
 
-nav{
+/*nav{
 	padding: 2px 2px ;
 	background-color: rgba(165,157,147, .5)
 }
@@ -42,12 +44,99 @@ nav{
 			color: orange;
 			font-weight: 500;
 		}
-
+*/
 			
 
 
+/*selectores de clase */
+.headerStickers {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: linear-gradient(to top,rebeccapurple, hotpink);
+  padding: 2rem 0;
+}
 
-/ selectores de clase / 
+.navWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linkList {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linkList a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 300%;
+  font-size: 1.5rem;
+
+
+}
+
+.logoCompany {
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  padding: 3rem 0 2rem;
+}
+
+.textBebas{
+	font-family: 'Bebas Neue', cursive;
+	margin: 0;
+	text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .headerStickers {
+    padding: 1rem;
+  }
+  .navWrapper {
+    flex-direction: row;
+  }
+
+  .linkList {
+    flex-direction: row;
+  }
+}
+
+/*footer*/
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f29a32;
+}
+
+.footer a {
+  background-color: #f29a32;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3rem;
+  }
+}
 
 .text-g{
 	color: grey;
@@ -98,12 +187,12 @@ nav{
 	color: #6D15B1;
 }
 
-#productos . section. figcaption{
+#productos
+.section
+.figcaption {
 	text-align: center;
 }
-.textBebas{
-	font-family: 'Bebas Neue', cursive;
-}
+
 
 .textOx{
 	font-family: 'Oxygen', sans-serif;
@@ -142,6 +231,16 @@ nav{
 .reverse{
 	flex-direction: row-reverse;
 }
+
+.headerIndex{
+	width: 100%;
+}
+
+.linealGradient{
+	background: linear-gradient(to top,rebeccapurple, hotpink);
+}
+
+
 
 /*BEM*/
 
@@ -186,27 +285,37 @@ nav{
 .contenedor{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows:repeat(3, auto);
+	grid-template-rows:repeat(, auto);
 	justify-content: center;
 }
 
-.contenedor2{
-	display: grid;
-	grid-template-columns: repeat(4, auto);
-	grid-template-rows:repeat(5, auto);
-	display:flex;
-	align-items: center;
-	justify-content: center;
-	grid-gap: 20px;
-}
-.posters{
-	grid-area: posters;
-}   
 
-.footer{
-	grid-area: pie;
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1em;
 }
 
-@media only screen and (min-width: 768vh) {
+.figureTag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer {
+  width: 100%;
+}
+
+.imageTag {
+  width: 100%;
+  max-width: 110px;
+}
+
+@media only screen and (min-width: 768px) {
+	.wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 2em 4rem;
+  }
 	
 }

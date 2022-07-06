@@ -271,14 +271,18 @@ nav ul li a:hover{
 	width: 75px;
 }
 
+.mapas{
+	margin: 0px;
+}
+
 /*BEM*/
 
 .sucursales__mapa{
-	width: 70%;
+	width: 50%;
 	height: auto;
 	margin: 80px auto;
 	padding: 30px;
-	border-top: 6px olivedrab double;
+	
 }
 
 .form__contacto{
@@ -318,7 +322,19 @@ nav ul li a:hover{
 	justify-content: center;
 }
 
+.poster-cards{
+	width: 200px;
+	height: 300px;
 
+}
+
+.padding-card{
+	padding-bottom:10%;
+}
+
+.btn-poster{
+	background-color: greenyellow;
+}
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -350,10 +366,42 @@ nav ul li a:hover{
 }
 
 
+
 @media only screen and (min-width: 768px) {
 	.wrapper {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 2em 4rem;
   }
+
 	
+	}
+
+
+
+	/*.mapas{
+		overflow: hidden;
+		padding-bottom: 40%;
+		position: relative;
+		height: 0;}*/
+
+@media only screen and (max-width 768px) {
+
+/*.text-map{
+	font-size: 1rem;
+}
+
+.mapas{
+		overflow: hidden;
+		padding-bottom: 40%;
+		position: relative;
+		height: 0;}
+
+	.mapas iframe{
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+	}*/
+
 }
